@@ -1,19 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cloud Computing Lab </title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
-        .status { color: green; font-weight: bold; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud-Native Deployment Lab</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Cloud-Native Deployment Success!</h1>
-    <p>This site was deployed using <b>GitHub Actions</b>.</p>
-    <div class="status">● Site Status: Live</div>
-    <hr>
-    <p>Student Name: [El Massaoudy Hamza]</p>
-    <p>Current Cloud Provider: GitHub (Microsoft Azure Infrastructure)</p>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white">
+
+  <!-- Main Container -->
+  <main class="min-h-screen flex items-center justify-center px-6 py-10">
+
+    <section class="w-full max-w-4xl bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl p-8 md:p-12 text-center">
+
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 border border-green-400/40 text-green-300 text-sm font-semibold mb-6">
+        <span class="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse"></span>
+        Site Status: Live
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-5">
+        Cloud-Native Deployment
+        <span class="block text-blue-400">Success!</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg md:text-xl text-slate-200 mb-8">
+        This website was automatically deployed using
+        <span class="font-bold text-white">GitHub Actions</span>
+        and hosted with
+        <span class="font-bold text-white">GitHub Pages</span>.
+      </p>
+
+      <!-- Image -->
+      <div class="flex justify-center mb-8">
+        <img 
+          src="https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg"
+          width="110"
+          alt="GitHub Actions Logo"
+          class="drop-shadow-xl"
+        />
+      </div>
+
+      <!-- Info Cards -->
+      <div class="grid md:grid-cols-3 gap-5 mb-10">
+
+        <div class="bg-white/10 border border-white/20 rounded-2xl p-5">
+          <h2 class="text-blue-300 font-bold text-lg mb-2">Student</h2>
+          <p class="text-slate-100">El Massaoudy Hamza</p>
+        </div>
+
+        <div class="bg-white/10 border border-white/20 rounded-2xl p-5">
+          <h2 class="text-blue-300 font-bold text-lg mb-2">Cloud Provider</h2>
+          <p class="text-slate-100">GitHub Pages</p>
+        </div>
+
+        <div class="bg-white/10 border border-white/20 rounded-2xl p-5">
+          <h2 class="text-blue-300 font-bold text-lg mb-2">Automation</h2>
+          <p class="text-slate-100">GitHub Actions</p>
+        </div>
+
+      </div>
+
+      <!-- Explanation -->
+      <div class="bg-slate-950/50 border border-blue-400/30 rounded-2xl p-6 text-left">
+        <h2 class="text-2xl font-bold text-blue-300 mb-3">
+          Cloud Computing Concept
+        </h2>
+
+        <p class="text-slate-200 leading-relaxed">
+          This project demonstrates a cloud-native automated deployment workflow.
+          After editing the HTML file and committing the change, GitHub Actions
+          automatically runs the deployment pipeline and publishes the updated
+          website online through GitHub Pages.
+        </p>
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt-8 text-sm text-slate-400">
+        Last Updated: 2026 | Cloud Computing Lab
+      </footer>
+
+    </section>
+
+  </main>
+
 </body>
 </html>
